@@ -1,10 +1,13 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center mb-4 pt-16 p-3 mt-20 "
     >
       <form
         method="POST"
@@ -42,6 +45,49 @@ const Contact = () => {
           Let's Connect
         </button>
       </form>
+
+      <div className="bg-[#0a192f] flex flex-row justify-between gap-4 mt-4 ">
+        <div className="bg-blue-600 p-1">
+          <a
+            className=" w-full text-gray-300 bg-blue-600"
+            href="https://www.linkedin.com/in/rishabh-kumar-singh-aa4bbb168"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin size={30} />
+          </a>
+        </div>
+        <div className="p-1 bg-[#333333]">
+          <a
+            className=" w-full text-gray-300"
+            href="https://github.com/rishabhsingh12"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub size={30} />
+          </a>
+        </div>
+        <div className="p-1 bg-[#6fc2b0]">
+          <a
+            className=" w-full text-gray-300"
+            href="mailto:rishabhs2897@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <HiOutlineMail size={30} />
+          </a>
+        </div>
+        <div className="p-1 bg-[#565f69]">
+          <a
+            className=" w-full text-gray-300"
+            href="https://drive.google.com/file/d/167FQAR1hBWuM6Z6VB3o58Sw4815voHY-/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsFillPersonLinesFill size={30} />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
