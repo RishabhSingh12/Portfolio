@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { MdPictureAsPdf } from "react-icons/md";
 
 const Contact = () => {
   return (
@@ -46,7 +46,7 @@ const Contact = () => {
         </button>
       </form>
 
-      <div className="bg-[#0a192f] flex flex-row justify-between gap-4 mt-4 ">
+      <div className="  bg-[#0a192f] lg:hidden flex flex-row justify-between gap-5 mt-4 ">
         <div className="bg-blue-600 p-1">
           <a
             className=" w-full text-gray-300 bg-blue-600"
@@ -77,14 +77,14 @@ const Contact = () => {
             <HiOutlineMail size={30} />
           </a>
         </div>
-        <div className="p-1 bg-[#565f69]">
+        <div className="p-1 bg-[#c90d0d]">
           <a
             className=" w-full text-gray-300"
-            href="https://drive.google.com/file/d/167FQAR1hBWuM6Z6VB3o58Sw4815voHY-/view?usp=sharing"
+            href="https://drive.google.com/file/d/1pOyCkgKW5rRognLrLcRa7tgL0XzYgLyV/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
-            <BsFillPersonLinesFill size={30} />
+            <MdPictureAsPdf size={30} />
           </a>
         </div>
       </div>
